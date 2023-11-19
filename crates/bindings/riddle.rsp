@@ -1,0 +1,4 @@
+--in winmd/
+--out src/bindings.rs
+--config implement
+--filter Windows.Internal.System.Profile

@@ -1,0 +1,22 @@
+import "inspectable.idl";
+
+namespace Windows { namespace Internal { namespace System { namespace Profile {
+
+    enum PolicyState
+    {
+        Unknown = 0,
+        Enabled,
+        Disabled
+    };
+
+    [version(1)]
+    runtimeclass RegionPolicyEvaluator
+    {
+        [static_name("Windows.Internal.System.Profile.IRegionPolicyEvaluatorStatics", 1ca20398-c1d9-5f12-b40a-6528206e3b5e)]
+        {
+            static PolicyState EvaluatePolicyState(Guid policy);
+            static PolicyState ForceEvaluatePolicyState(Guid policy);
+        }
+    };
+
+}}}}

@@ -1,0 +1,10 @@
+[package]
+name = "bindings"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies.windows-core]
+version = "0.52.0"
+features = [
+    "implement",
+]

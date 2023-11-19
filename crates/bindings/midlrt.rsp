@@ -1,0 +1,9 @@
+/winrt
+/nomidl
+/h
+nul
+/metadata_dir
+C:\Windows\System32\WinMetadata
+/winmd
+winmd/W.I.S.P.RegionPolicyEvaluator.winmd
+winmd/W.I.S.P.RegionPolicyEvaluator.idl
