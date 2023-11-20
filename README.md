@@ -11,6 +11,6 @@ From a Visual Studio Developer Command Prompt, simply run `cargo build`. This sp
 
 ## Installing / Uninstalling
 
-From an **elevated** Visual Studio Developer Command Prompt, run `pwsh scripts\Install.ps1`. Reverse the changes with `pwsh scripts\Uninstall.ps1`. Note: These scripts currently assume a standard Windows installation assigned to letter `C:\`.
+From an **elevated** Visual Studio Developer Command Prompt, run `pwsh scripts\Install.ps1`. Reverse the changes with `pwsh scripts\Uninstall.ps1`.
 
 Opening Microsoft Edge or Windows Settings will result in the Region Policy Evaluator component load, as of Windows vNext Build 25997. The skeleton component will currently write debug output to `%Temp%\component.log`.
