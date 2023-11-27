@@ -11,13 +11,15 @@ crate-type = ["cdylib"]
 path = "../bindings"
 
 [dependencies.windows-core]
-version = "0.52.0"
+git = "https://github.com/riverar/windows-rs"
+branch = "rafael/0.52_partialtrust"
 features = [
     "implement",
 ]
 
 [dependencies.windows]
-version = "0.52.0"
+git = "https://github.com/riverar/windows-rs"
+branch = "rafael/0.52_partialtrust"
 features = [
     "implement",
     "Foundation",

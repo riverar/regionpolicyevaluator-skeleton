@@ -9,6 +9,8 @@ A skeleton WinRT component that can serve as a substitute for the [Region Policy
 ## Building
 From a Visual Studio Developer Command Prompt, simply run `cargo build`. This specialized environment is needed for access to MIDLRT tooling.
 
+The initial build process may take longer due to Cargo creating a [non-shallow clone](https://github.com/rust-lang/cargo/issues/1171) of a [`windows-rs` fork](https://github.com/microsoft/windows-rs/compare/master...riverar:windows-rs:rafael/0.52_partialtrust), which is necessary for building components with partial trust.
+
 ## Installing / Uninstalling
 
 From an **elevated** Visual Studio Developer Command Prompt, run `pwsh scripts\Install.ps1`. Reverse the changes with `pwsh scripts\Uninstall.ps1`.

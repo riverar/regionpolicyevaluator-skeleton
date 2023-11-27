@@ -7,10 +7,11 @@ version = "0.1.0"
 path = "../bindings"
 
 [dependencies.windows]
+git = "https://github.com/riverar/windows-rs"
+branch = "rafael/0.52_partialtrust"
 features = [
     "implement",
     "Foundation",
     "Win32_Foundation",
     "Win32_System_WinRT",
 ]
-version = "0.52.0"
