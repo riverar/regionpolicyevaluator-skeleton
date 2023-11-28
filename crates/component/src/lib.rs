@@ -27,7 +27,7 @@ unsafe extern "system" fn DllGetActivationFactory(
     S_OK
 }
 
-#[implement(IRegionPolicyEvaluatorStatics, IActivationFactory)]
+#[implement(IRegionPolicyEvaluatorStatics, IActivationFactory, TrustLevel = Partial)]
 struct ClassFactory {
     log: File,
 }
